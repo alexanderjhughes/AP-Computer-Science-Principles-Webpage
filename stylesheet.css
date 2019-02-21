@@ -1,0 +1,15 @@
+div#banner {
+	position: fixed;
+	padding-top: 10px;
+	top: 0; 
+	left: 0; 
+	background-color: #DDEEEE; 
+	width: 100%; 
+}
+img#reddit-link {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-right: 25px;
+}
