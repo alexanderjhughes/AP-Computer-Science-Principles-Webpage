@@ -1,10 +1,13 @@
 div#banner {
 	position: fixed;
-	padding-top: 10px;
-	top: 0; 
-	left: 0; 
-	background-color: #DDEEEE; 
-	width: 100%; 
+	top: 0;
+	left: 0;
+	background-color: #DDEEEE;
+	width: 100%;
+}
+div#container {
+	position: relative;
+	text-align: center;
 }
 img#reddit-link {
 	width: 30px;
