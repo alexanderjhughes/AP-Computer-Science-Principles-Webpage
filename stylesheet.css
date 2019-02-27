@@ -9,7 +9,7 @@ div#banner {
 	left: 0;
 	width: 100%;
 	background-color: #f1f1f1;
-  	padding: 10px;
+  padding: 10px;
 }
 div#container {
 	position: relative;
@@ -17,18 +17,13 @@ div#container {
 }
 div#navbar {
 	overflow: hidden;
-  	background-color: #333;
-  	width: 100%;
+  background-color: #333;
+  width: 100%;
 }
 
 #navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
+  background-color: #81c1be;
   color: black;
-}
-
-#navbar a.active, .dropdown:active .dropbtn {
-  background-color: #4CAF50;
-  color: white;
 }
 
 a#navbar-page {
@@ -57,12 +52,10 @@ a#navbar-page {
 }
 
 .dropdown-content {
-  display: block;
+  display: none;
   color: black;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  min-height: 40px;
+  background-color: #333;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -71,23 +64,24 @@ a#navbar-page {
   float: none;
   color: black;
   padding: 16px 10px;
+  height: 60px;
+  width: 425px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #81c1be;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
-
 .content {
   padding: 16px;
+  background: #424242;
 }
 
 .sticky {

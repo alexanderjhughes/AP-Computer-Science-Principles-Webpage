@@ -4,9 +4,6 @@
 	<title>PC is Better</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
-	<style>
-
-	</style>
 </head>
 <body>
 	<div id="banner">
@@ -18,11 +15,12 @@
 		<div class="dropdown">
 			<button class="dropbtn">Forums</button>
 			<div class="dropdown-content">
-				<a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="pcmr.png" align="left" style="width: 250px;height: 40px;float: left;"></a>
-				<a href="https://linustechtips.com/main/" target="_blank"><img src="linustechtips.png" align="left"></a>
+				<a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="pcmr.png"></a>
+				<a href="https://linustechtips.com/main/" target="_blank"><img src="linustechtips.png"></a>
 			</div>
 		</div>
 	</div>
+	<hr>
 	<div id="container">
 		<div class="content">
 			<h2 style = "padding-top: 70px; padding-bottom: 100%">This is another pc</h2>
@@ -37,11 +35,12 @@
 	window.onscroll = function() {myFunction()};
 
 	var navbar = document.getElementById("navbar");
+	var navbarpage = document.getElementById("navbar-page");
 	var sticky = navbar.offsetTop;
 
 	function myFunction() {
 	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
+	    navbar.classList.add("sticky");
 	  } else {
 	    navbar.classList.remove("sticky");
 	  }
