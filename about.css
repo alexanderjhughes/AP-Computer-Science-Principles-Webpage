@@ -4,6 +4,10 @@ body {
   font-family: 'Fjalla', sans-serif;
   margin: 0;
 }
+.container {
+  margin: 0px;
+  background: #424242;
+}
 .content {
   margin: 0px 25%;
 }

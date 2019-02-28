@@ -5,7 +5,7 @@
   <title>PC is Better/About</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="about.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">  
 </head>
 <body>
 <div id="banner">
@@ -22,34 +22,51 @@
 			</div>
     </div>
   </div>
-<div class="content" style="margin-left: 0%;margin-right: 0px;border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 10000000000px;">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images\xander v2.jpg" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>This is Xander</h1> 
-      <p>
-      		Xander is one of two devs that worked on the PCMR website.
-      </p> 
+<div class="container">
+  <div class="content" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 10000000000px;">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images\xander v2.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>This is Xander</h1> 
+        <p>
+        		Xander is one of two devs that worked on the PCMR website.
+        </p> 
 
+      </div>
+    </div>
+  </div>
+  <div class="flip-card" style="float: right;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Images\Tommy.jpg" alt="Avatar" style="width:300px;height:300px; ">
+      </div>
+      <div class="flip-card-back">
+        <h1>This is Tommy</h1> 
+        <p>
+            Tommy is one of two devs that worked on the PCMR website. 
+        </p> 
+
+      </div>
     </div>
   </div>
 </div>
-<div class="flip-card" style="float: right;">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images\Tommy.jpg" alt="Avatar" style="width:300px;height:300px; ">
-    </div>
-    <div class="flip-card-back">
-      <h1>This is Tommy</h1> 
-      <p>
-          Tommy is one of two devs that worked on the PCMR website. 
-      </p> 
+<script>
+  window.onscroll = function() {myFunction()};
 
-    </div>
-  </div>
-</div>
+  var navbar = document.getElementById("navbar");
+  var navbarpage = document.getElementById("navbar-page");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
 </body>
 </html>
