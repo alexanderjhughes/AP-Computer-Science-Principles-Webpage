@@ -4,7 +4,7 @@ body {
 	font-family: 'Fjalla', sans-serif;
 	margin: 0;
 }
-hr {
+hr#navbar-bar {
   color: #ffffff;
   width: 80%;
   height: 5px;
@@ -97,6 +97,11 @@ a#navbar-page {
 .sticky {
   position: fixed;
   top: 0;
+  width: 100%;
+}
+
+.stickydropdown {
+  position: fixed;
   width: 100%;
 }
 

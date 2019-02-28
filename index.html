@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>PC is Better</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
@@ -14,13 +15,15 @@
 		<a  id="navbar-page" href="about.html">About</a>
 		<div class="dropdown">
 			<button class="dropbtn">Forums</button>
-			<div class="dropdown-content">
-				<a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="Images/pcmr.png"></a>
-				<a href="https://linustechtips.com/main/" target="_blank"><img src="Images/linustechtips.png"></a>
+			<div  id="drdw">
+				<div class="dropdown-content">
+					<a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="Images/pcmr.png"></a>
+					<a href="https://linustechtips.com/main/" target="_blank"><img src="Images/linustechtips.png"></a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<hr>
+	<hr id="navbar-bar">
 	<div id="container">
 		<div class="content">
 			<h2 style = "padding-top: 70px; padding-bottom: 100%">This is another pc</h2>
@@ -30,20 +33,25 @@
 	<div id="footer">
 
 	</div>
-
 	<script>
 	window.onscroll = function() {myFunction()};
 
 	var navbar = document.getElementById("navbar");
-	var navbarpage = document.getElementById("navbar-page");
+	var drdw = document.getElementById("drdw");
+	var hr = document.getElementById("navbar-bar");
 	var sticky = navbar.offsetTop;
 
 	function myFunction() {
 	  if (window.pageYOffset >= sticky) {
 	    navbar.classList.add("sticky");
+	    drdw.classList.add("stickydropdown");
+	    hr.classList.add("stickydropdown");
 	  } else {
 	    navbar.classList.remove("sticky");
+	    drdw.classList.remove("stickydropdown");
+	    hr.classList.remove("stickydropdown");
 	  }
 	}
 	</script>
 </body>
+</html>
