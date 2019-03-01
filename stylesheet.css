@@ -7,7 +7,7 @@ body {
 hr#navbar-bar {
   color: #ffffff;
   width: 80%;
-  height: 5px;
+  height: 3px;
   margin: 0px;
   background-color: #333333;
   border: none;
@@ -19,10 +19,6 @@ div#banner {
 	width: 100%;
 	background-color: #f1f1f1;
   padding: 10px;
-}
-div#container {
-	position: relative;
-	text-align: center;
 }
 div#navbar {
 	overflow: hidden;
@@ -51,7 +47,7 @@ a#navbar-page {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -88,10 +84,41 @@ a#navbar-page {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+#container {
+	background: black;
+}
 .content {
-  padding: 16px;
-  background: #424242;
+  padding: 16px 16px;
+}
+
+.consolevpc {
+	padding: 100px 75px;
+	height: 100vh;
+}
+
+.gpuspecs {
+	padding: 100px 75px;
+	height: 100vh;
+	opacity: 0;
+}
+
+.console-tag {
+	padding-left: 70px;
+	position: absolute;
+	font-size: 20px;
+	font-family: 'Verdana';
+	color: white;
+	width: 200px;
+}
+
+.pc-tag {
+	padding-right: 100px;
+	position: absolute;
+	font-size: 20px;
+	text-align: left;
+	right: 350px;
+	font-family: 'Verdana';
+	color: white;
 }
 
 .sticky {
@@ -102,9 +129,25 @@ a#navbar-page {
 
 .stickydropdown {
   position: fixed;
-  width: 100%;
 }
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  opacity: 1 !important;
+}
+
+.fadeOut {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  opacity: 0 !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
 }

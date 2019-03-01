@@ -5,6 +5,7 @@
 	<title>PC is Better</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 	<div id="banner">
@@ -23,15 +24,27 @@
 			</div>
 		</div>
 	</div>
-	<hr id="navbar-bar">
+	<!--
+		<hr id="navbar-bar">
+	-->
 	<div id="container">
 		<div class="content">
-			<h2 style = "padding-top: 70px; padding-bottom: 100%">This is another pc</h2>
-			<h3 style = "padding-top: 70px;">This is a 3rd header</h3>
+			<div class="consolevpc">
+				<img src="Images/XBox/xbox.png" style="width: 300px; height 150px;">
+				<img src="Images/PC/Gaming-Tower.png" align="right" style="width: 300px; height 500px;">
+				<p class="console-tag"><strong>X-Box One</strong></p>
+				<p class="pc-tag" align="right"><strong>PC</strong></p>
+			</div>
+			<div class="gpuspecs">
+				<img src="Images/XBox/xbox.png" style="max-width: 300px; height: auto; width: 100%;">
+				<img src="Images/PC/Gaming-Tower.png" align="right" style="max-width: 300px; height auto; width: 100%;">
+				<p class="console-tag"><strong>X-Box One</strong></p>
+				<p class="pc-tag" align="right"><strong>PC</strong></p>
+			</div>
+			<div id="footer">
+				<p style="padding-top: 10000px; font-size:50px; text-align: center;"> END </p>
+			</div>
 		</div>
-	</div>
-	<div id="footer">
-
 	</div>
 	<script>
 	window.onscroll = function() {myFunction()};
@@ -45,13 +58,87 @@
 	  if (window.pageYOffset >= sticky) {
 	    navbar.classList.add("sticky");
 	    drdw.classList.add("stickydropdown");
-	    hr.classList.add("stickydropdown");
+	    //hr.classList.add("sticky");
 	  } else {
 	    navbar.classList.remove("sticky");
 	    drdw.classList.remove("stickydropdown");
-	    hr.classList.remove("stickydropdown");
+	    //hr.classList.remove("sticky");
 	  }
 	}
 	</script>
+	<script>
+		/*function showImages(el) {
+	    var windowHeight = jQuery( window ).height();
+	    $(el).each(function(){
+	      var thisPos = $(this).offset().top;
+
+	      var topOfWindow = $(window).scrollTop();
+	      if (topOfWindow + windowHeight - 200 > thisPos ) {
+	      	$(this).addClass("fadeIn");
+					console.log(topOfWindow);
+	      }
+				if (topOfWindow - 200 > thisPos ) {
+					$(this).addClass("fadeOut");
+					console.log(topOfWindow);
+				}
+	    });
+	  }
+		function hideImages(el) {
+			var windowHeight = jQuery( window ).height();
+			$(el).each(function(){
+				var thisPos = $(this).offset().bottom;
+
+				var topOfWindow = $(window).scrollTop();
+				if (topOfWindow + windowHeight - 200 > thisPos ) {
+	      	$(this).addClass("fadeOut");
+					console.log(topOfWindow);
+	      }
+				if (topOfWindow - 200 > thisPos ) {
+					$(this).addClass("fadeIn");
+					console.log(topOfWindow);
+				}
+			});
+		}
+
+	  // if the image in the window of browser when the page is loaded, show that image
+	  $(document).ready(function(){
+	    showImages('.gpuspecs');
+	  });
+
+		var lastScrollTop = 0;
+
+	  // if the image in the window of browser when scrolling the page, show that image
+	  $(window).scroll(function() {
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop){
+				showImages('.gpuspecs');
+			} else {
+				hideImages('.gpuspecs')
+			}
+			lastScrollTop = st;
+		});*/
+		function showImages(el) {
+			var windowHeight = jQuery( window ).height();
+			$(el).each(function(){
+				var thisPos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+				if (topOfWindow + windowHeight - 200 > thisPos ) {
+					$(this).addClass("fadeIn");
+					console.log(topOfWindow);
+				}
+			});
+		}
+
+	  // if the image in the window of browser when the page is loaded, show that image
+	  $(document).ready(function(){
+	    showImages('.gpuspecs');
+	  });
+	  // if the image in the window of browser when scrolling the page, show that image
+	  $(window).scroll(function() {
+			showImages('.gpuspecs');
+		});
+	</script>
+
 </body>
 </html>
