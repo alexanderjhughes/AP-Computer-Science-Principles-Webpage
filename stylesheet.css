@@ -96,7 +96,7 @@ a#navbar-page {
 	height: 100vh;
 }
 
-.gpuspecs {
+.specs {
 	padding: 100px 75px;
 	height: 100vh;
 	opacity: 0;
@@ -136,6 +136,48 @@ a#navbar-page {
 .pc-tag-gpu {
   padding-right: 50px;
   padding-top: 25px;
+  position: absolute;
+  font-size: 20px;
+  text-align: right;
+  right: 350px;
+  font-family: 'Verdana';
+  color: white;
+}
+
+.console-tag-ram {
+  padding-left: 350px;
+  padding-top: 75px;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Verdana';
+  color: white;
+  width: auto;
+}
+
+.pc-tag-ram {
+  padding-right: 150px;
+  padding-top: 100px;
+  position: absolute;
+  font-size: 20px;
+  text-align: right;
+  right: 350px;
+  font-family: 'Verdana';
+  color: white;
+}
+
+.console-tag-cpu {
+  padding-left: 350px;
+  padding-top: 75px;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Verdana';
+  color: white;
+  width: auto;
+}
+
+.pc-tag-cpu {
   position: absolute;
   font-size: 20px;
   text-align: right;

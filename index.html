@@ -11,7 +11,7 @@
 	<div id="banner">
 		<h1 style="text-align: left;">PC VS CONSOLE</h1>
 	</div>
-	
+
 	<div id="navbar">
 		<a id="navbar-page" href="index.html">Home</a>
 		<a  id="navbar-page" href="about.html">About</a>
@@ -36,14 +36,26 @@
 				<p class="console-tag"><strong>X-Box One</strong></p>
 				<p class="pc-tag" align="right"><strong>PC</strong></p>
 			</div>
-			<div class="gpuspecs">
+			<div class="specs">
 				<p class="console-tag-gpu"><strong>Custom AMD X-Box GPU<br>853 MHz of Performance</strong></p>
 				<p class="pc-tag-gpu" align="right"><strong>GTX 1080 TI<br>1582 MHz of Performance</strong></p>
-				<img src="Images/XBox/gpu.jpg" style="max-width: 300px; height: auto; width: 100%;">
+				<img src="Images/XBox/gpu.png" style="max-width: 400px; height: auto; width: 100%;">
 				<img src="Images/PC/gpu.png" align="right" style="max-width: 400px; height auto; width: 100%;">
 			</div>
+      <div class="specs">
+        <p class="console-tag-ram"><strong>DDR3<br>8 GB</strong></p>
+        <p class="pc-tag-ram" align="right"><strong>DDR4<br>16 GB</strong></p>
+        <img src="Images/XBox/ram.png" style="max-width: 300px; height: auto; width: 100%;">
+        <img src="Images/PC/ram.jpg" align="right" style="max-width: 400px; height auto; width: 100%;">
+      </div>
+      <div class="specs">
+        <p class="console-tag-cpu"><strong>Custom AMD X-Box CPU<br>8 Core 1.75 GHz</strong></p>
+        <p class="pc-tag-cpu" align="right"><strong>Intel Core I7<br>16 Core 4.40 GHz</strong></p>
+        <img src="Images/XBox/cpu.jpg" style="max-width: 300px; height: auto; width: 100%;">
+        <img src="Images/PC/cpu.png" align="right" style="max-width: 400px; height auto; width: 100%; padding-top: 25px;">
+      </div>
 			<div id="footer">
-				<p style="padding-top: 10000px; font-size:50px; text-align: center;"> END </p>
+        <p><strong>Thanks!</strong></p>
 			</div>
 		</div>
 	</div>
@@ -133,12 +145,13 @@
 
 	  // if the image in the window of browser when the page is loaded, show that image
 	  $(document).ready(function(){
-	    showImages('.gpuspecs');
+	    showImages('.specs');
 	  });
 	  // if the image in the window of browser when scrolling the page, show that image
 	  $(window).scroll(function() {
-			showImages('.gpuspecs');
+			showImages('.specs');
 		});
+
 	</script>
 
 </body>
