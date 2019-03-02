@@ -100,6 +100,7 @@ a#navbar-page {
 	padding: 100px 75px;
 	height: 100vh;
 	opacity: 0;
+  position: relative;
 }
 
 .console-tag {
@@ -120,6 +121,29 @@ a#navbar-page {
 	font-family: 'Verdana';
 	color: white;
 }
+
+.console-tag-gpu {
+  padding-left: 350px;
+  padding-top: 75px;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Verdana';
+  color: white;
+  width: auto;
+}
+
+.pc-tag-gpu {
+  padding-right: 50px;
+  padding-top: 25px;
+  position: absolute;
+  font-size: 20px;
+  text-align: right;
+  right: 350px;
+  font-family: 'Verdana';
+  color: white;
+}
+
 
 .sticky {
   position: fixed;
