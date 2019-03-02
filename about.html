@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<div class="icon-bar">
+  <a href="https://www.facebook.com/OfficialPCMasterRace/" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/OfficialPCMR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://pcpartpicker.com/" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://www.instagram.com/xhughesey/" class="instagram"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.instagram.com/t_nuggs_17/" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com/watch?v=ARY8E0C9Ulw" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PC is Better/About</title>
@@ -11,19 +22,23 @@
 <div id="banner">
     <h1 style="text-align: left;">PC VS CONSOLE</h1>
   </div>
+
   <div id="navbar">
     <a id="navbar-page" href="index.html">Home</a>
     <a  id="navbar-page" href="about.html">About</a>
     <div class="dropdown">
       <button class="dropbtn">Forums</button>
-      <div class="dropdown-content">
-				<a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="Images/pcmr.png"></a>
-				<a href="https://linustechtips.com/main/" target="_blank"><img src="Images/linustechtips.png"></a>
-			</div>
+      <div  id="drdw">
+        <div class="dropdown-content">
+          <a href="https://www.reddit.com/r/pcmasterrace/" target="_blank"><img src="Images/pcmr.png"></a>
+          <a href="https://linustechtips.com/main/" target="_blank"><img src="Images/linustechtips.png"></a>
+        </div>
+      </div>
     </div>
   </div>
+
 <div class="container">
-  <div class="content" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 10000000000px;">
+  <div class="content" style="border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 10000px;">
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
@@ -31,7 +46,7 @@
       </div>
       <div class="flip-card-back">
         <h1>This is Xander</h1> 
-        <p>
+        <p style="font-size: 20px">
         		Xander is one of two devs that worked on the PCMR website.
         </p> 
 
@@ -45,7 +60,7 @@
       </div>
       <div class="flip-card-back">
         <h1>This is Tommy</h1> 
-        <p>
+        <p style="font-size: 20px">
             Tommy is one of two devs that worked on the PCMR website. 
         </p> 
 
@@ -57,14 +72,20 @@
   window.onscroll = function() {myFunction()};
 
   var navbar = document.getElementById("navbar");
-  var navbarpage = document.getElementById("navbar-page");
+  var drdw = document.getElementById("drdw");
+  var hr = document.getElementById("navbar-bar");
   var sticky = navbar.offsetTop;
 
-  function myFunction() {
+
+ function myFunction() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky");
+      drdw.classList.add("stickydropdown");
+      //hr.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
+      drdw.classList.remove("stickydropdown");
+      //hr.classList.remove("sticky");
     }
   }
 </script>
